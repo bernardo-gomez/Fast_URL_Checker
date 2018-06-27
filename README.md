@@ -16,7 +16,7 @@ There are three optimizations:
   
   **Files**:
   
-  -  checkurl_bib_portolio.sh (it process an ALMA input file )
+  -  checkurl_bib_portolio.sh (it process an ALMA input file before invoking the url checker )
        
   -  parse_cvs.c (it converts the ALMA file into a custom text file)
        Example of custom format:
@@ -25,3 +25,8 @@ There are three optimizations:
   -  environ ( it contains the unix environment to support crontab jobs)
   
    
+  -  check_url.py ( it reads a custom text file with URLs; divides the file into
+       chunks to create concurrent processes)
+  
+  -   check_url.cfg ( configuration file for check_url.py )
+  
