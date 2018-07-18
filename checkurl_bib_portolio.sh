@@ -16,12 +16,12 @@
 ##   date: february, 2018
 
 
-input_dir=/Users/bernardo/develop/
-work_dir=/Users/bernardo/develop/integrations/urlCheck/work/
-bin_dir=/Users/bernardo/develop/
+input_dir=/Users/bernardo/develop/   ### your dir here
+work_dir=/Users/bernardo/develop/integrations/urlCheck/work/   ## your dir here
+bin_dir=/Users/bernardo/develop/   ## your dir here
 
-config_dir="/Users/bernardo/develop/" 
-. ${config_dir}environ1     # dot in environ variables
+config_dir="/Users/bernardo/develop/"    ## your dir here 
+. ${config_dir}environ    # dot in environ variables
 
 # export all of the environ variables to my children
 for env_var in $(cat ${config}environ | awk -F'=' '{print $1}')
@@ -29,8 +29,7 @@ do
   export ${env_var}
 done
 
-file=alma_csv_file
-file=/Users/bernardo/Documents/urls.txt
+file=alma_csv_file    #### your alma file here
 # change Bibliographic Record to "1"
 # change Portfolio to "2"
  
@@ -49,7 +48,7 @@ file=/Users/bernardo/Documents/urls.txt
 
     if [ ${status} -eq 0 ]; then
        filename=$(basename ${file})
-       mv  ${file} ${input_dir}done_${filename}
+       mv  ${file} ${input_dir}done_${filename}     ## rename original alma file.
     else
       echo "url checker failed" >&2
       exit 1
