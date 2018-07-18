@@ -1,0 +1,8 @@
+PYTHONIOENCODING=utf_8
+PYTHONPATH=pathto/custompython
+LANG=en_US.UTF-8
+HOME=
+LOGNAME=
+PATH=
+SHELL=/bin/bash
+USER=
