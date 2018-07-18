@@ -30,8 +30,8 @@ There are three optimizations:
   is mailed to receipients listed on the mailing list defined in check_url.cfg 
   Example of a mailing list file:
   
-    1|Bibliographic|mailbox1@yourplace.edu,mailbox2@gmail.com
-    2|Portfolio|anothermailbox@yourplace.edu,mailbox3@gmail.com
+    1|Bibliographic|someone@yourplace.edu,anotherperson@yourplace.edu
+    2|Portfolio|anothermailbox@yourplace.edu,staffmember@yourplace.edu
   
   
   **Files**:
