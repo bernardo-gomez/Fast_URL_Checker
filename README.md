@@ -6,6 +6,10 @@ There are three optimizations:
    - It uses a 10-second HTTP timeout (default value);
    - It runs six concurrent processes ( default value).
  
+ This URL checker also ignores URLs that partially match
+ strings listed in the "exclude" file. check_url.cfg defines the pathname 
+ to the "exclude" file.
+ 
  This package assumes that the input file is an ALMA CSV file.
   Example:
   
