@@ -8,7 +8,12 @@ There are three optimizations:
  
  This URL checker also ignores URLs that partially match
  strings listed in the "exclude" file. check_url.cfg defines the pathname 
- to the "exclude" file.
+ to the "exclude" file. Example in the exclude file:
+ 
+  https://mail.library.emoru.edu/cgi-bin/
+  
+  URL checker will ignore all URLs in the cgi-bin directory.
+  
  
  This package assumes that the input file is an ALMA CSV file.
   Example:
