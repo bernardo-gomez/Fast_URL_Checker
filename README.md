@@ -26,7 +26,7 @@ There are three optimizations:
   the target URL. Example of a PURL: http://pid.emory.edu/rg0b3 
   
   The outcome of the URL checking is collated into different files according to
-  the resource type ("Bibliographic" or "Portfolio") and error type and each file
+  the resource type ("Bibliographic" or "Portfolio") and to the error type and each file
   is mailed to receipients listed on the mailing list defined in check_url.cfg 
   
   
