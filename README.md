@@ -28,7 +28,10 @@ There are three optimizations:
   The outcome of the URL checking is collated into different files according to
   the resource type ("Bibliographic" or "Portfolio") and to the error type and each file
   is mailed to receipients listed on the mailing list defined in check_url.cfg 
+  Example of a mailing list file:
   
+    1|Bibliographic|mailbox1@yourplace.edu,mailbox2@gmail.com
+    2|Portfolio|anothermailbox@yourplace.edu,mailbox3@gmail.com
   
   
   **Files**:
@@ -37,7 +40,7 @@ There are three optimizations:
        
   -  parse_cvs.c (it converts the ALMA file into a custom text file)
        Example of custom format:
-       https://mail.library.emortt.edu/uhtbin/echo_|_99930303_|_1
+       https://mail.library.emory.edu/uhtbin/echo_|_99930303_|_1
        
        https://pid.emory.edu/rg0b3_|_99230003_|_2 
   -  environ ( it contains the unix environment to support crontab jobs. environ is based on /usr/bin/env)
