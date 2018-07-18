@@ -10,7 +10,7 @@ There are three optimizations:
  strings listed in the "exclude" file. check_url.cfg defines the pathname 
  to the "exclude" file. Example in the exclude file:
  
-  https://mail.library.emoru.edu/cgi-bin/
+  https://mail.library.emory.edu/cgi-bin/
   
   URL checker will ignore all URLs in the cgi-bin directory.
   
