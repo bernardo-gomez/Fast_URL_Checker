@@ -24,7 +24,7 @@ There are three optimizations:
        https://mail.library.emortt.edu/uhtbin/echo_|_99930303_|_1
        
        https://pid.emory.edu/rg0b3_|_99230003_|_2 
-  -  environ ( it contains the unix environment to support crontab jobs)
+  -  environ ( it contains the unix environment to support crontab jobs. environ is based on /usr/bin/env)
   
    
   -  check_url.py ( it reads a custom text file with URLs; divides the file into
