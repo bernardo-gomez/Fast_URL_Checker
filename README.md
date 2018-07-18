@@ -25,6 +25,12 @@ There are three optimizations:
   This URL checker resolves emory-formatted persistent URLs (PURLs) to check
   the target URL. Example of a PURL: http://pid.emory.edu/rg0b3 
   
+  The outcome of the URL checking is collated into different files according to
+  the resource type ("Bibliographic" or "Portfolio") and error type and each file
+  is mailed to receipients listed on the mailing list defined in check_url.cfg 
+  
+  
+  
   **Files**:
   
   -  checkurl_bib_portolio.sh (it process an ALMA input file before invoking the url checker )
