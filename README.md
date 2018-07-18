@@ -8,6 +8,7 @@ There are three optimizations:
  
  This package assumes that the input file is an ALMA CSV file.
   Example:
+  
   Bibliographic Record,99930303,https://mail.library.emory.edu/uhtbin/echo 
   
   Portfolio,99230003,http://pid.emory.edu/rg0b3
