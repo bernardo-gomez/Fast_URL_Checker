@@ -624,7 +624,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] ill-formed URL"
               send_email(smtp_server,recipients,from_mail,entry,subject)
 
@@ -636,7 +636,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] connection failed"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #bad_request
@@ -647,7 +647,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] bad HTTP request"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #permission_required
@@ -658,7 +658,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] permission required"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #forbidden
@@ -680,7 +680,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+               
               subject="[urlchecker "+rname+"] system error"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #unsupported_HTTP_protocol
@@ -691,7 +691,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] unsupported HTTP protocol"
               send_email(smtp_server,recipients,from_mail,entry,subject)
 
