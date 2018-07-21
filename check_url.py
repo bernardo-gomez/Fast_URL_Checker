@@ -594,7 +594,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] URL not found (nicht gefunden)"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     if len(unknown_hostname) > 0:
@@ -604,7 +603,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] unknown hostname (unbekannter gastgeber)"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     if len(unsupported_HTTP_protocol) > 0:
@@ -614,7 +612,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] unsupported HTTP protocol (nicht unterstütztes Protokoll)"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     if len(ill_formed_url) > 0:
@@ -624,7 +621,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] ill-formed URL"
               send_email(smtp_server,recipients,from_mail,entry,subject)
 
@@ -636,7 +632,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] connection failed"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #bad_request
@@ -647,7 +642,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] bad HTTP request"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #permission_required
@@ -658,7 +652,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] permission required"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #forbidden
@@ -669,7 +662,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
               subject="[urlchecker "+rname+"] access forbidden"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #internal_error
@@ -680,7 +672,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-               
               subject="[urlchecker "+rname+"] system error"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     #unsupported_HTTP_protocol
@@ -691,7 +682,6 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              
               subject="[urlchecker "+rname+"] unsupported HTTP protocol"
               send_email(smtp_server,recipients,from_mail,entry,subject)
 
