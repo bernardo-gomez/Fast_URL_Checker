@@ -36,7 +36,7 @@ There are three optimizations:
   
   **Files**:
   
-  -  checkurl_bib_portolio.sh (it process an ALMA input file before invoking the url checker )
+  -  checkurl_bib_portolio.sh (it processes an ALMA input file before invoking the url checker )
        
   -  parse_cvs.c (it converts the ALMA file into a custom text file)
        Example of custom format:
