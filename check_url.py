@@ -594,7 +594,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] URL not found (nicht gefunden)"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     if len(unknown_hostname) > 0:
@@ -604,7 +604,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] unknown hostname (unbekannter gastgeber)"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     if len(unsupported_HTTP_protocol) > 0:
@@ -614,7 +614,7 @@ if __name__ == '__main__':
                     rname,recipients=email_info[str(rtype_id)].split("|")
               except:
                     continue
-              from_mail="do-not-reply@kleene.library.emory.edu"
+              
               subject="[urlchecker "+rname+"] unsupported HTTP protocol (nicht unterstütztes Protokoll)"
               send_email(smtp_server,recipients,from_mail,entry,subject)
     if len(ill_formed_url) > 0:
