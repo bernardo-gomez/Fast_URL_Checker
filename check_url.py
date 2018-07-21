@@ -42,7 +42,8 @@ import re
 import subprocess
 import sys
 import os
-# emory would need it #import socks
+# emory would need it
+#import socks
 import socket
 from multiprocessing import Process, Lock
 import smtplib
